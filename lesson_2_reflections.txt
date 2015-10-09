@@ -1,3 +1,9 @@
 What happens when you initialize a repository? Why do you need to do it?
 	Git makes the current directory a Git repository by creating a subfolder named .git with metadata in it.
 	Without initializing, a directory is not a Git repository and it's contents can't be versioned.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+	Staging area contains the (information about the) files that will be tracked by Git.
+	Working directory contains all the files, both tracked and un-tracked.
+	Staging area allows to work with (choose, change, add, remove) files before committing, without the need to do multiple commits.
+	
+This line is added to this file after the file has been added to Git staging area using "git add"

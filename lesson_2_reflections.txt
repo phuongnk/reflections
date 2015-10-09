@@ -1,0 +1,3 @@
+What happens when you initialize a repository? Why do you need to do it?
+	Git makes the current directory a Git repository by creating a subfolder named .git with metadata in it.
+	Without initializing, a directory is not a Git repository and it's contents can't be versioned.

@@ -6,4 +6,22 @@ How is the staging area different from the working directory and the repository?
 	Working directory contains all the files, both tracked and un-tracked.
 	Staging area allows to work with (choose, change, add, remove) files before committing, without the need to do multiple commits.
 	
-This line is added to this file after the file has been added to Git staging area using "git add"
+How can you use the staging area to make sure you have one commit per logical change?
+	Only "add" the files that have been changed for the purpose of the "logical change" to the staging area. 
+	Do not add other changed files to the staging area.
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	- Experiment with some changes
+	- Add new features but want to separate it from the master branch until the new feature code is stable
+	In general, the master branch is usually for production-quality code, other branches are for experimental, ongoing changes 
+How do the diagrams help you visualize the branch structure?
+	It shows branches (where they start and end), and the commits in each of them
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	Changes in both branches are combined
+	A new, merged commit is created with both branches' changes
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+	Pros of automatic merging (theoretical only, not supported by Git in reality (?)):
+		- Save time
+	Cons of automatic merging:
+		- It can merge branches when they are not ready to be merged (changes are not done, etc)
+		- It doesn't know how to solve conflicts
+
